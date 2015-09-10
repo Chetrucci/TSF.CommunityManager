@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html ng-app="communityManager">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="content/Bootstrap/bootstrap.css" />
+        <link rel="stylesheet" href="content/PixelAdmin/pixel-admin.css" />
+        <link rel="stylesheet" href="content/PixelAdmin/pages.css" />
+        <link rel="stylesheet" href="content/PixelAdmin/rtl.css" />
+        <link rel="stylesheet" href="content/PixelAdmin/themes.css" />
+        <link rel="stylesheet" href="content/PixelAdmin/widgets.css" />
+        <link rel="stylesheet" href="content/font-awesome.min.css" />
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <link rel="stylesheet" href="content/normalize.css">
+        <link rel="stylesheet" href="content/main.css">
+
+        
+    </head>
+    <body>
+        <div ng-include="'app/Layout/Views/Layout.header.html'" class="page-header"></div>
+        <div class="container">
+            <!-- Content section -->
+          <div ui-view style="margin-top:20px"></div>
+        </div>
+
+
+        <!-- Scripts Section -->
+        <script src="js/vendor/angular.js"></script>
+        <script src="js/vendor/angular-resource.js"></script>
+        <script src="js/vendor/angular-sanitize.js"></script>
+        <script src="js/vendor/angular-ui-router.js"></script>
+        <script src="js/vendor/angular-mocks.js"></script>
+        <script src="js/vendor/jquery-1.9.1.js"></script>
+        <script src="js/vendor/bootstrap.js"></script>
+
+        <!-- App Scripts -->
+        <script src="app/app.js"></script>
+
+        <!-- Data -->
+        <script src="app/Data/data.module.js"></script>
+        <script src="app/Data/resource.module.js"></script>
+        <script src="app/Resident/Services/resident.service.js"></script>
+        
+        <!--  Mocks -->
+        <script src="app/Mocks/communityManager.mocks.js"></script>
+        <script src="app/Mocks/Common/commonResource.mock.js"></script>
+        <script src="app/Mocks/Resident/residentResource.mock.js"></script>
+
+        <!--  Resident -->
+        <script src="app/Data/Resident/Resident.Resource.js"></script>
+        <script src="app/Resident/resident.module.js"></script>
+        <script src="app/Resident/Controllers/resident.controller.js"></script>
+
+    </body>
+</html>

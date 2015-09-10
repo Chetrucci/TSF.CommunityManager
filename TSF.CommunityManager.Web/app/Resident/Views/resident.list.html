@@ -1,0 +1,26 @@
+﻿<div>
+    <table ng-controller="ResidentController as vm" class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Address</th>
+                <th>Village</th>
+                <th>Region</th>
+                <th>Phone No</th>
+                <th>Last Payment</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="resident in vm.residents">
+                <td>{{resident.firstName}}</td>
+                <td>{{resident.lastName}}</td>
+                <td>{{resident.address}}</td>
+                <td>{{resident.village}}</td>
+                <td>{{resident.region}}</td>
+                <td>{{resident.phone}}</td>
+                <td>{{resident.lastPaymentAmount | currency}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

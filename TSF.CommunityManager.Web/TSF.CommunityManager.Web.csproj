@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{50392407-83C2-44AD-999C-FB3832114E32}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TSF.CommunityManager.Web</RootNamespace>
+    <AssemblyName>HTML5 Boiler Plate v4.3</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="404.html" />
+    <Content Include="apple-touch-icon-precomposed.png" />
+    <Content Include="app\app.js" />
+    <Content Include="app\Data\data.module.js" />
+    <Content Include="app\Mocks\Common\commonResource.mock.js" />
+    <Content Include="app\Mocks\Resident\residentResource.mock.js" />
+    <Content Include="app\Resident\Controllers\resident.controller.js" />
+    <Content Include="app\Resident\Services\resident.service.js" />
+    <Content Include="app\Data\resource.module.js" />
+    <Content Include="app\Layout\Views\Layout.Header.html" />
+    <Content Include="app\Data\Resident\Resident.Resource.js" />
+    <Content Include="app\Mocks\communityManager.mocks.js" />
+    <None Include="app\_references.js" />
+    <Content Include="app\Resident\resident.module.js" />
+    <Content Include="app\Resident\Views\resident.list.html" />
+    <Content Include="content\Bootstrap\bootstrap-theme.css" />
+    <Content Include="content\Bootstrap\bootstrap-theme.min.css" />
+    <Content Include="content\Bootstrap\bootstrap.css" />
+    <None Include="content\Bootstrap\bootstrap.css.old" />
+    <Content Include="content\Bootstrap\bootstrap.min.css">
+      <DependentUpon>bootstrap.css</DependentUpon>
+    </Content>
+    <Content Include="content\PixelAdmin\pages.css" />
+    <Content Include="content\PixelAdmin\pages.min.css" />
+    <Content Include="content\PixelAdmin\pixel-admin.css" />
+    <Content Include="content\PixelAdmin\pixel-admin.min.css" />
+    <Content Include="content\PixelAdmin\rtl.css" />
+    <Content Include="content\PixelAdmin\rtl.min.css" />
+    <Content Include="content\PixelAdmin\themes.css" />
+    <Content Include="content\PixelAdmin\themes.min.css" />
+    <Content Include="content\PixelAdmin\widgets.css" />
+    <Content Include="content\PixelAdmin\widgets.min.css" />
+    <Content Include="crossdomain.xml" />
+    <Content Include="content\main.css" />
+    <Content Include="content\normalize.css" />
+    <Content Include="content\font-awesome.css" />
+    <Content Include="content\font-awesome.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="content\Fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="content\Fonts\fontawesome-webfont.svg" />
+    <Content Include="humans.txt" />
+    <Content Include="img\.gitignore" />
+    <Content Include="index.html" />
+    <Content Include="js\vendor\jquery-1.10.2.min.js" />
+    <Content Include="js\vendor\modernizr-2.6.2.min.js" />
+    <Content Include="robots.txt" />
+    <Content Include="js\vendor\angular-mocks.js" />
+    <Content Include="js\vendor\angular-resource.js" />
+    <Content Include="js\vendor\angular-resource.min.js" />
+    <Content Include="js\vendor\angular-sanitize.js" />
+    <Content Include="js\vendor\angular-sanitize.min.js" />
+    <Content Include="js\vendor\angular-ui-router.js" />
+    <Content Include="js\vendor\angular-ui-router.min.js" />
+    <Content Include="js\vendor\angular.js" />
+    <Content Include="js\vendor\angular.min.js" />
+    <Content Include="content\Fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="content\Fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="content\Fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="content\Fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="content\Bootstrap\bootstrap.css.map" />
+    <Content Include="content\Bootstrap\bootstrap-theme.css.map" />
+    <Content Include="content\Fonts\FontAwesome.otf" />
+    <Content Include="content\Fonts\fontawesome-webfont.woff2" />
+    <Content Include="content\Fonts\fontawesome-webfont.woff" />
+    <Content Include="content\Fonts\fontawesome-webfont.ttf" />
+    <Content Include="content\Fonts\fontawesome-webfont.eot" />
+    <None Include="js\vendor\jquery-1.9.1.intellisense.js" />
+    <Content Include="js\vendor\bootstrap.js" />
+    <Content Include="js\vendor\bootstrap.min.js" />
+    <Content Include="js\vendor\jquery-1.9.1.js" />
+    <Content Include="js\vendor\jquery-1.9.1.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".htaccess" />
+    <Content Include="CHANGELOG.md" />
+    <Content Include="CONTRIBUTING.md" />
+    <Content Include="doc\crossdomain.md" />
+    <Content Include="doc\css.md" />
+    <Content Include="doc\extend.md" />
+    <Content Include="doc\faq.md" />
+    <Content Include="doc\html.md" />
+    <Content Include="doc\js.md" />
+    <Content Include="doc\misc.md" />
+    <Content Include="doc\TOC.md" />
+    <Content Include="doc\usage.md" />
+    <Content Include="LICENSE.md" />
+    <Content Include="README.md" />
+    <Content Include="js\vendor\angular.min.js.map" />
+    <Content Include="packages.config" />
+    <Content Include="js\vendor\angular-resource.min.js.map" />
+    <Content Include="js\vendor\angular-sanitize.min.js.map" />
+    <Content Include="js\vendor\jquery-1.9.1.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\Announcements\Controllers\" />
+    <Folder Include="app\Announcements\Services\" />
+    <Folder Include="app\Announcements\Views\" />
+    <Folder Include="app\CommunityEvents\" />
+    <Folder Include="app\Publications\" />
+    <Folder Include="app\Resident\Directives\" />
+    <Folder Include="fonts\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55730</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:55730/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
